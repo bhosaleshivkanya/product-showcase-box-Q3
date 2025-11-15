@@ -6,7 +6,7 @@
   <title>Product Showcase Box - Fixed</title>
 
   <style>
-    /* Defensive reset */
+    
     * { box-sizing: border-box; }
 
     body {
@@ -17,12 +17,12 @@
       padding: 20px;
     }
 
-    /* Container exactly 500x600 as required */
+    
     .container {
       width: 500px;
       height: 600px;
       margin: 10px;
-      padding: 20px;            /* reduced padding so content fits */
+      padding: 20px;            
       border: 3px solid grey;
       border-radius: 15px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.15);
@@ -30,14 +30,14 @@
 
       display: flex;
       flex-direction: column;
-      /* keep content from overflowing the fixed size */
+     
       overflow: hidden;
     }
 
-    /* Image area - fixed max height so it won't overflow */
+   
     .image-wrap {
       width: 100%;
-      height: 320px;           /* controls how big image appears */
+      height: 320px;           
       display: flex;
       align-items: center;
       justify-content: center;
@@ -47,7 +47,7 @@
     .image-wrap img {
       max-width: 100%;
       max-height: 100%;
-      object-fit: contain;     /* important so image scales without distortion */
+      object-fit: contain;    
       border-radius: 10px;
       display: block;
     }
@@ -55,7 +55,7 @@
     .meta {
       text-align: center;
       padding: 6px 0;
-      flex: 1;                 /* lets the bottom area stay pinned */
+      flex: 1;                
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -145,7 +145,7 @@
   <div class="container">
     <!-- IMAGE -->
     <div class="image-wrap">
-      <!-- use remote image or local image path; avoid very tall images -->
+      
       <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/w/x/h/-original-imahfa7xspmxemvj.jpeg" alt="Samsung Galaxy Watch">
     </div>
 
@@ -158,7 +158,7 @@
         <div class="rating-row">
           <span class="rating-box">4.3 ★</span>
           <span>(973)</span>
-          <!-- small logo to avoid pushing layout -->
+          
           <img class="assured" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="Assured">
         </div>
 
@@ -171,7 +171,7 @@
         <div class="bank">Bank Offer</div>
       </div>
 
-      <!-- CTA -->
+     
       <div class="cta-wrap">
         <button>Buy Now</button>
       </div>
